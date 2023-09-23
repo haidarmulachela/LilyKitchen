@@ -140,8 +140,15 @@ h3.ico4 { background-image:url(images/ico4.gif);}
 .kue ul {list-style-type: none; height:64px; font-weight: bold;}
 .kue ul li{ float:left; width:175px; height:200px; padding:0 10px;text-align: center;}
 .kue ul li img{border-radius: 25px;}
+#search {width: 150px;height: 20px; padding: 10 10 px; margin: 20px;border-radius: 25px;border: solid;}
 
 .harga{margin-top: 10px; font-weight: bold;}
 .tambah{background-color: #fff;padding: 5px 10 px;border-radius: 25px; cursor: pointer;}
 .shell{background-color: #fff;}
 .bayar{width: 1200px; top: 30px; background-color: #ff9d9d; margin: 0 auto; padding: 10px; position: relative;height: 450px;border: solid; border-radius: 25px;}
+
+#registerForm{top: 30px;width: 1100px;margin: 0 auto; padding: 10px;background-color: #ff9d9d;position: relative;border-radius: 25px;border:solid;}
+#registerForm h1{ top: 0px;left: 0;z-index: 1;padding: 10px;; background-color: #fff;border-radius: 15px;border: solid;}
+
+#loginForm{top: 30px;width: 1100px;margin: 0 auto; padding: 10px;background-color: #ff9d9d;position: relative;border-radius: 25px;border:solid;}
+#loginForm h1{ top: 0px;left: 0;z-index: 1;padding: 10px;; background-color: #fff;border-radius: 15px;border: solid;}
