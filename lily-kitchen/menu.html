@@ -40,7 +40,7 @@
     </ul>
   </div>
   <div class="kue">
-    <input type="text" id ="search" placeholder="Cari">
+    <input type="text" id ="search" onkeyup="searchFilter()" placeholder="Cari">
     <ul id="listKue">
       <li class="item"><img src="css/images/kue1.jpg" alt=""><p class="namakue">Kue 1</p><p class="harga">20.000</p><button onclick="addToCart(1,'kue 1',20000)" class="tambah">+</button> <span id="jumlah1">0</span> <button onclick="kurangToCart(1,'Kue 1',20000)" class="tambah">-</button></li>
       <li class="item"><img src="css/images/kue2.jpg" alt=""><p class="namakue">Kue 2</p><p class="harga">20.000</p><button onclick="addToCart(2,'Kue 2',20000)" class="tambah">+</button> <span id="jumlah2">0</span> <button onclick="kurangToCart(2,'Kue 2',20000)" class="tambah">-</button></li>

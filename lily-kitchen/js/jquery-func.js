@@ -145,6 +145,7 @@ function login(){
 	});
 }
 
+function searchFilter(){
 const search = document.getElementById('search');
 const listKue = document.getElementById('listKue');
 
@@ -154,20 +155,21 @@ search.addEventListener('input', function () {
     // Lakukan pencarian dan tampilkan hasil
     searchItems(searchText);
 });
+}
 
 function searchItems(searchText) {
-    const items = listKue.getElementsByClassName('namakue'); // Ambil semua elemen dengan kelas 'namakue'
+    const items = listKue.querySelectorAll("li"); // Ambil semua elemen dengan kelas 'namakue'
 
     // Iterasi melalui semua item dalam daftar
     for (let i = 0; i < items.length; i++) {
         const item = items[i];
-        const itemName = item.textContent.toLowerCase(); // Ambil teks item dan ubah menjadi huruf kecil
+        const itemName = item.querySelector(".namakue").textContent.toLowerCase(); // Ambil teks item dan ubah menjadi huruf kecil
 
         // Periksa apakah teks pencarian cocok dengan item
-        if (itemName.includes(searchText)) {
-            item.parentElement.style.display = 'block'; // Tampilkan item yang cocok (lihat elemen induknya)
+        if (itemName.indexOf(searchText)>-1) {
+            item.style.display = ''; // Tampilkan item yang cocok (lihat elemen induknya)
         } else {
-            item.parentElement.style.display = 'none'; // Sembunyikan item yang tidak cocok (lihat elemen induknya)
+            item.style.display = 'none'; // Sembunyikan item yang tidak cocok (lihat elemen induknya)
         }
     }
 }
